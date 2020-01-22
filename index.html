@@ -1,60 +1,221 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <title>Portfolio WebSite</title>
-        <link rel="stylesheet" href="portefolio.css">
-    </head>
+<title>Tomi Dzemov Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-    <body>
-        <header id="mail-header">
-            <div class="container">
-            <h1>Tomi Dzemov</h1>
-            <span class="social">
-                <a href="https://www.facebook.com/ali.kshv" class="fa fa-facebook"></a>
-                <a href="https://github.com/alikashev" class="fa fa-github"></a>
-                <a href="https://www.instagram.com/ali_kashev/" class="fa fa-instagram"></a>
-           </span>
-            </div>
-        </header>
-        <nav id="navbar">
-            <div class="container">
-                <ui>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ui>
-              <h1>My Portfolio WebSite</h1>
-            </div>
-        </nav>
-        <section id="showcase">
-            <div class="container">
-                <h1>
-                    WELKOM OP MIJN PAGINA
-                </h1>
-            </div>
-        </section>
-        <div class="container">
-        <section id="mail">
-            <h1>Welkom</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. 
-                Quo adipisci sint amet ipsa minima rem cupiditate architecto. 
-                Quam id eaque accusantium cum inventore assumenda 
-                reiciendis cupiditate quis architecto cumque. Magni!</p>
-        </section>
-        <aside id="sidebar">
-                <p>Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. 
-                reiciendis cupiditate quis architecto cumque. Magni!
-                Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. 
-                reiciendis cupiditate quis architecto cumque. Magni!</p>
-        </aside>
-     </div>
-     <footer id="mail-footer">
-         <p>Copyright &#174; &#9400; Tomi Dzemov</p>
-     </footer>
-    </body>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="logoooo.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Tomi Dzemov.</h1>
+    <p>Web Designer & Application developer</p>
+    <img src="tomi.jpg" alt="boy" class="w3-image" width="500" height="700">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I'am Tomi Dzemov. I'm 18 years old and live in the Netherlands. I do the IT Education on the ROC Midden Nederland in Nieuwegein The Netherlands. Programming was a hobby of mine before i did this education, and i really like it. I can work with HTML & CSS. Also i can work with PHP and Javascript. 
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">HTML & CSS</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">PHP</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">50+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">50+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">50+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">50+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">X</li>
+          <li class="w3-padding-16">
+            <h2>€ 50,00</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">App design</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Endless Support</li>
+          <li class="w3-padding-16">
+            <h2>€ 125,00</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <a href="https://www.google.com/intl/nl/gmail/about/#"></a><li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
+    <img src="ChristiaanVerhoef.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Christiaan Verhoef.</span> Teacher at IT School.</p>
+    <p>Tomi is my best student, he knows many things about programlanguages.</p><br>
+    
+    <img src="kenan-smailhodzic.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Mister P.</span> CEO of Apple.</p>
+    <p>No one is better than Tomi Dzemov.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Work</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+    <a href="file:///C:/Users/Tomi/Desktop/HTML%20&%20CSS/De%20Groot%20opdracht/factuur.html"> <img src="2020-01-22%20(1).png"style="width:100%"></a>
+    <a href="file:///C:/Users/Tomi/Desktop/HTML%20&%20CSS/Herkansing%20HTML/homepagina.html"><img src="2020-01-22.png" style="width:100%"></a>
+    <a href="file:///C:/Users/Tomi/Desktop/HTML%20&%20CSS/Meteoren%20Pagina/home.html"><img src="2020-01-22%20(3).png" style="width:100%"></a>
+      </div>
+
+      <div class="w3-half">
+      <a href="file:///C:/Users/Tomi/Desktop/HTML%20&%20CSS/Kolommen/tekstkolom.html"><img src="2020-01-22%20(4).png" style="width:100%"></a>
+      <a href="file:///C:/Users/Tomi/Desktop/HTML%20&%20CSS/Menu%20balk/graugrau.html"><img src="2020-01-22%20(5).png" style="width:100%"></a>
+      <a href="file:///C:/Users/Tomi/Desktop/Javascript/Balletjes%20Java/balletjes.html"><img src="2020-01-22%20(6).png" style="width:100%"></a>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Utrecht, The Netherlands</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +31 0628646704</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tomidzemov@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <a href="https://www.google.com/intl/nl/gmail/about/#"> </a><i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.facebook.com/profile.php?id=100013002061770"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/tnqlo.7/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.bing.com/images/search?view=detailV2&ccid=Ffoenq3U&id=B6F1D13D3878AC456840CC18913E38C78FC965BE&thid=OIP.Ffoenq3Ua2t9L9Dqji6UCQHaMy&mediaurl=https%3a%2f%2fpbs.twimg.com%2fmedia%2fCTpcsG6UEAA7MkE.jpg%3alarge&exph=1024&expw=593&q=snapchat&simid=608052521070889944&selectedIndex=44&ajaxhist=0"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a href="https://nl.pinterest.com/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://nl.linkedin.com/in/tomi-dzemov-10686a199"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by Tomi Dzemov</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
